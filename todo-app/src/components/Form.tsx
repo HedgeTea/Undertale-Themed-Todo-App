@@ -11,7 +11,7 @@ export default function Form({ task, setTask, handleAdd }: Props) {
     <form className="form" onSubmit={(e) => handleAdd(e)}>
       <label htmlFor="todo">
         Nice:
-        <input type="text" name="todo" id="todo" value={task} onChange={(e) => setTask(e.target.value)} placeholder="Write your next task" />
+        <input type="text" name="todo" id="todo" onChange={(e) => {console.log(e.target.value);setTask(e.target.value)}} placeholder="Write your next task" />
       </label>
       <button>Submit</button>
     </form>
