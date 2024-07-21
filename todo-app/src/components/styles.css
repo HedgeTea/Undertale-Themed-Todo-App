@@ -1,0 +1,51 @@
+.inputForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vh;
+}
+
+.submitBox {
+  position: relative;
+  font-family: "mercy", sans-serif;
+  font-size: 30px;
+  color: yellow;
+  border: solid;
+  border-color: yellow;
+  border-radius: 5px;
+  border-width: 4px;
+  background: transparent;
+  text-align: end;
+  width: 150px;
+  z-index: 2;
+}
+
+.inputBox {
+  width: 30vw;
+  font-family: "mercy", sans-serif;
+  color: white;
+  background-color: transparent;
+  border: solid;
+  font-size: 20px;
+  min-width: 250px;
+}
+
+.submitBox:active {
+  box-shadow: 0px 0px 30px 2px white;
+  transition: 0.05s;
+  transform: scale(0.9);
+}
+
+.submitWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.heart {
+  top: 10px;
+  left: 25px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  z-index: 1;
+}

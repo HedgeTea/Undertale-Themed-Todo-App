@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "PerfectDark";
+  src: url("../fonts/pdark.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "sofa";
+  src: url("../fonts/sofachrome_rg.otf") format("opentype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "SignRover";
+  src: url("../fonts/Sign_Rover_Layered.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "determination";
+  src: url("../fonts/determination.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "monster";
+  src: url("../fonts/monster.otf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "mercy";
+  src: url("../fonts/mercy.otf") format("opentype");
+  font-weight: normal;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}

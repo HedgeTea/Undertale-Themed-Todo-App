@@ -1,19 +1,24 @@
-import { Dispatch, FormEvent, SetStateAction, SyntheticEvent } from "react";
+import { Dispatch, SetStateAction, SyntheticEvent } from "react";
+import Image from "next/image";
+import "./styles.css";
+import heart from "../assets/heart.png";
 
-interface Props {
-  task: string;
-  setTask: Dispatch<SetStateAction<string>>;
-  handleAdd: (e: FormEvent) => void;
-}
+type drill = {
+  adder: (e: SyntheticEvent) => void;
+  setter: Dispatch<SetStateAction<string>>;
+};
 
-export default function Form({ task, setTask, handleAdd }: Props) {
+const a = `nice`;
+export default function Form(props: drill) {
   return (
-    <form className="form" onSubmit={(e) => handleAdd(e)}>
-      <label htmlFor="todo">
-        Nice:
-        <input type="text" name="todo" id="todo" onChange={(e) => {console.log(e.target.value);setTask(e.target.value)}} placeholder="Write your next task" />
-      </label>
-      <button>Submit</button>
-    </form>
+    <div>
+      <form className="inputForm" action="" onSubmit={props.adder}>
+        <input className="inputBox" type="text" onChange={(e) => props.setter(e.target.value)} />
+        <div className="submitWrapper">
+          <input className="submitBox" type="submit" value="ACT" />
+          <img className="heart" src={heart.src} alt="" />
+        </div>
+      </form>
+    </div>
   );
 }
