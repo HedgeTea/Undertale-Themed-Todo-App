@@ -4,9 +4,7 @@ import { Task } from "@/components/Item";
 import Form from "@/components/Form";
 import Item from "@/components/Item";
 import Styles from "./page.module.css";
-import pen from "../assets/pen.png";
-import flag from "../assets/flag.png";
-import { link } from "fs";
+
 
 export default function ToDo() {
   const [task, setTask] = useState<string>("");

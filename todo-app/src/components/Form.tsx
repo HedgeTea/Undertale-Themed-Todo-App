@@ -1,5 +1,4 @@
 import { Dispatch, SetStateAction, SyntheticEvent } from "react";
-import Image from "next/image";
 import "./styles.css";
 import heart from "../assets/heart.png";
 
@@ -9,7 +8,6 @@ type drill = {
   task: string;
 };
 
-const a = `nice`;
 export default function Form(props: drill) {
   return (
     <div>
