@@ -6,6 +6,7 @@ import heart from "../assets/heart.png";
 type drill = {
   adder: (e: SyntheticEvent) => void;
   setter: Dispatch<SetStateAction<string>>;
+  task: string;
 };
 
 const a = `nice`;
@@ -13,7 +14,7 @@ export default function Form(props: drill) {
   return (
     <div>
       <form className="inputForm" action="" onSubmit={props.adder}>
-        <input className="inputBox" type="text" onChange={(e) => props.setter(e.target.value)} />
+        <input className="inputBox" type="text" value={props.task} onChange={(e) => props.setter(e.target.value)} />
         <div className="submitWrapper">
           <input className="submitBox" type="submit" value="ACT" />
           <img className="heart" src={heart.src} alt="" />
